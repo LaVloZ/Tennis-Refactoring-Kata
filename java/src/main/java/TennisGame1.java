@@ -42,12 +42,15 @@ public class TennisGame1 implements TennisGame {
     }
 
     private String getScore(int m_score11) {
-        return switch (m_score11) {
-            case 0 -> "Love";
-            case 1 -> "Fifteen";
-            case 2 -> "Thirty";
-            case 3 -> "Forty";
-            default -> "";
-        };
+        if (m_score11 == 0) {
+            return "Love";
+        } else if (m_score11 == 1) {
+            return "Fifteen";
+        } else if (m_score11 == 2) {
+            return "Thirty";
+        } else if (m_score11 == 3) {
+            return "Forty";
+        }
+        return "";
     }
 }
