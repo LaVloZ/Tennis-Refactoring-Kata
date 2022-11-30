@@ -43,12 +43,7 @@ public class TennisGame2 implements TennisGame {
         }
 
         if (score2 < 4 && score1 < 4) {
-            if (score1 == 1)
-                player1 = "Fifteen";
-            if (score1 == 2)
-                player1 = "Thirty";
-            if (score1 == 3)
-                player1 = "Forty";
+            extracted(score1);
             if (score2 == 1)
                 player2 ="Fifteen";
             if (score2 == 2)
@@ -68,6 +63,15 @@ public class TennisGame2 implements TennisGame {
         }
         return "Advantage player2";
 
+    }
+
+    private void extracted(int score1) {
+        if (score1 == 1)
+            player1 = "Fifteen";
+        if (score1 == 2)
+            player1 = "Thirty";
+        if (score1 == 3)
+            player1 = "Forty";
     }
 
     public void P1Score() {
