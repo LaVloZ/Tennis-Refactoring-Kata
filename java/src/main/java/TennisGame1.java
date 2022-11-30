@@ -53,7 +53,6 @@ public class TennisGame1 implements TennisGame {
             } else if (m_score2 == 3) {
                 score = score + "Forty";
             } else {
-                score = score;
             }
         }
         return score;
