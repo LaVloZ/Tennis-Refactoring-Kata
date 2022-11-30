@@ -39,6 +39,9 @@ public class TennisGame1 implements TennisGame {
                 score = score1;
             } else if (m_score1 == 1) {
                 score = "Fifteen";
+                String score1 = "Fifteen";
+                score = score1;
+
             } else if (m_score1 == 2) {
                 score = "Thirty";
             } else if (m_score1 == 3) {
