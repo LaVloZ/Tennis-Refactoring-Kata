@@ -21,20 +21,14 @@ public class TennisGame1 implements TennisGame {
             }
             return "Deuce";
         }
-        if (score1 >= 4) {
-            int minusResult = score1 - score2;
-            if (minusResult == 1) return "Advantage " + "player1";
-            if (minusResult == -1) return "Advantage " + "player2";
-            if (minusResult >= 2) return "Win for " + "player1";
-            return "Win for " + "player2";
-        } else if (score2 >= 4) {
-            int minusResult = score1 - score2;
-            if (minusResult == 1) return "Advantage " + "player1";
-            if (minusResult == -1) return "Advantage " + "player2";
-            if (minusResult >= 2) return "Win for " + "player1";
-            return "Win for " + "player2";
+        if (score1 < 4 && score2 < 4) {
+            return getScore(score1) + "-" + getScore(score2);
         }
-        return getScore(score1) + "-" + getScore(score2);
+        int minusResult = score1 - score2;
+        if (minusResult == 1) return "Advantage " + "player1";
+        if (minusResult == -1) return "Advantage " + "player2";
+        if (minusResult >= 2) return "Win for " + "player1";
+        return "Win for " + "player2";
     }
 
     private String getScore(int score) {
