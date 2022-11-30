@@ -22,10 +22,10 @@ public class TennisGame1 implements TennisGame {
                 score = "Love" + all;
             } else if (m_score1 == 1) {
                 score = "Fifteen" + all;
-            } else if (m_score1 != 2) {
-                score = "Deuce";
-            } else {
+            } else if (m_score1 == 2) {
                 score = "Thirty" + all;
+            } else {
+                score = "Deuce";
             }
         } else if (m_score1 >= 4 || m_score2 >= 4) {
             int minusResult = m_score1 - m_score2;
