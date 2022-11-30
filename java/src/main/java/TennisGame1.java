@@ -34,19 +34,27 @@ public class TennisGame1 implements TennisGame {
             }
         } else {
             if (m_score1 < 4 && m_score2 < 4) {
-                for (int i = 1; i < 3; i++)
-                {
-                    if (i == 1) tempScore = m_score1;
-                    else {
-                        score += "-";
-                        tempScore = m_score2;
-                    }
-                    switch (tempScore) {
-                        case 0 -> score = score + "Love";
-                        case 1 -> score = score + "Fifteen";
-                        case 2 -> score = score + "Thirty";
-                        case 3 -> score = score + "Forty";
-                    }
+                if (1 == 1) tempScore = m_score1;
+                else {
+                    score += "-";
+                    tempScore = m_score2;
+                }
+                switch (tempScore) {
+                    case 0 -> score = score + "Love";
+                    case 1 -> score = score + "Fifteen";
+                    case 2 -> score = score + "Thirty";
+                    case 3 -> score = score + "Forty";
+                }
+                if (2 == 1) tempScore = m_score1;
+                else {
+                    score += "-";
+                    tempScore = m_score2;
+                }
+                switch (tempScore) {
+                    case 0 -> score = score + "Love";
+                    case 1 -> score = score + "Fifteen";
+                    case 2 -> score = score + "Thirty";
+                    case 3 -> score = score + "Forty";
                 }
             } else {
                 int minusResult = m_score1 - m_score2;
