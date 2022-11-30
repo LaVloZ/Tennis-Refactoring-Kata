@@ -70,7 +70,7 @@ public class TennisGame2 implements TennisGame {
             return player1 + "-" + player2;
         }
 
-        if (score1 > score2 && score2 >= 3) {
+        if (score1 > score2) {
             score = "Advantage player1";
         }
 
