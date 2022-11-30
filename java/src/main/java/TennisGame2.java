@@ -15,7 +15,7 @@ public class TennisGame2 implements TennisGame
         if (score1 == this.score && score1 < 4)
         {
             if (score1 ==0)
-                score = "Love";
+                return "Love" + "-All";
             if (score1 ==1)
                 score = "Fifteen";
             if (score1 ==2)
