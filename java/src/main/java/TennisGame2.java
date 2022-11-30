@@ -30,18 +30,18 @@ public class TennisGame2 implements TennisGame {
         return "Forty";
     }
 
-    public void score1() {
+    public void wonPointForPlayer1() {
         score1++;
     }
 
-    public void score2() {
+    public void wonPointForPlayer2() {
         score2++;
     }
 
     public void wonPoint(String player) {
         if ("player1".equals(player))
-            score1();
+            wonPointForPlayer1();
         else
-            score2();
+            wonPointForPlayer2();
     }
 }
