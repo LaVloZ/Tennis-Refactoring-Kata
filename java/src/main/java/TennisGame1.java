@@ -17,11 +17,10 @@ public class TennisGame1 implements TennisGame {
     public String getScore() {
         String score = "";
         if (m_score1 == m_score2) {
+            String all = "-All";
             if (m_score1 == 0) {
-                String all = "-All";
                 score = "Love" + all;
             } else {
-                String all = "-All";
                 if (m_score1 == 1) {
                     score = "Fifteen" + all;
                 } else if (m_score1 == 2) {
