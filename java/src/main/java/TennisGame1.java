@@ -45,15 +45,15 @@ public class TennisGame1 implements TennisGame {
             }
             score += "-";
             if (m_score2 == 0) {
-                score += "Love";
+                score = score + "Love";
             } else if (m_score2 == 1) {
-                score += "Fifteen";
+                score = score + "Fifteen";
             } else if (m_score2 == 2) {
-                score += "Thirty";
+                score = score + "Thirty";
             } else if (m_score2 == 3) {
-                score += "Forty";
+                score = score + "Forty";
             } else {
-                score += score;
+                score = score + score;
             }
         }
         return score;
