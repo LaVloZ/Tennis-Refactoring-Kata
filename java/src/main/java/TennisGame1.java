@@ -44,9 +44,7 @@ public class TennisGame1 implements TennisGame {
             }
             score += "-";
             score = switch (m_score2) {
-                case 0 -> {
-                    yield score + "Love";
-                }
+                case 0 -> score + "Love";
                 case 1 -> score + "Fifteen";
                 case 2 -> score + "Thirty";
                 case 3 -> score + "Forty";
