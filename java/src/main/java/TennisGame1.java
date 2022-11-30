@@ -21,7 +21,8 @@ public class TennisGame1 implements TennisGame {
                 return getScore(m_score1) + "-All";
             }
             return "Deuce";
-        } else if (m_score1 >= 4 || m_score2 >= 4) {
+        }
+        if (m_score1 >= 4 || m_score2 >= 4) {
             int minusResult = m_score1 - m_score2;
             if (minusResult == 1) return "Advantage player1";
             else if (minusResult == -1) return "Advantage player2";
