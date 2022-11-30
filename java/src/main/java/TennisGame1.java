@@ -45,7 +45,8 @@ public class TennisGame1 implements TennisGame {
             }
             score += "-";
             if (m_score2 == 0) {
-                score = score + "Love";
+                String score1 = score;
+                score = score1 + "Love";
             } else if (m_score2 == 1) {
                 score = score + "Fifteen";
             } else if (m_score2 == 2) {
