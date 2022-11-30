@@ -66,11 +66,8 @@ public class TennisGame2 implements TennisGame {
         if (score1 > score2) {
             return "Advantage player1";
         }
-        if (score2 > score1) {
-            return "Advantage player2";
-        }
+        return "Advantage player2";
 
-        return "Love" + "-" + player2;
     }
 
     public void P1Score() {
