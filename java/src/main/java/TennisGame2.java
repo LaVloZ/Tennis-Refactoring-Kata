@@ -91,7 +91,7 @@ public class TennisGame2 implements TennisGame
         }
         if (this.score >=4 && score1 >=0 && (this.score - score1)>=2)
         {
-            score = "Win for player2";
+            return "Win for player2";
         }
         return score;
     }
