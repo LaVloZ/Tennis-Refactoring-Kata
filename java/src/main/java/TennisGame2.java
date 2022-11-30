@@ -4,8 +4,8 @@ public class TennisGame2 implements TennisGame
     public int score1 = 0;
     public int score = 0;
     
-    public String P1res = "";
-    public String P2res = "";
+    public String player1 = "";
+    public String player2 = "";
 
     public TennisGame2() {
     }
@@ -28,51 +28,51 @@ public class TennisGame2 implements TennisGame
         if (score1 > 0 && this.score ==0)
         {
             if (score1 ==1)
-                P1res = "Fifteen";
+                player1 = "Fifteen";
             if (score1 ==2)
-                P1res = "Thirty";
+                player1 = "Thirty";
             if (score1 ==3)
-                P1res = "Forty";
+                player1 = "Forty";
             
-            P2res = "Love";
-            score = P1res + "-" + P2res;
+            player2 = "Love";
+            score = player1 + "-" + player2;
         }
         if (this.score > 0 && score1 ==0)
         {
             if (this.score ==1)
-                P2res = "Fifteen";
+                player2 = "Fifteen";
             if (this.score ==2)
-                P2res = "Thirty";
+                player2 = "Thirty";
             if (this.score ==3)
-                P2res = "Forty";
+                player2 = "Forty";
             
-            P1res = "Love";
-            score = P1res + "-" + P2res;
+            player1 = "Love";
+            score = player1 + "-" + player2;
         }
         
         if (score1 > this.score && score1 < 4)
         {
             if (score1 ==2)
-                P1res="Thirty";
+                player1 ="Thirty";
             if (score1 ==3)
-                P1res="Forty";
+                player1 ="Forty";
             if (this.score ==1)
-                P2res="Fifteen";
+                player2 ="Fifteen";
             if (this.score ==2)
-                P2res="Thirty";
-            score = P1res + "-" + P2res;
+                player2 ="Thirty";
+            score = player1 + "-" + player2;
         }
         if (this.score > score1 && this.score < 4)
         {
             if (this.score ==2)
-                P2res="Thirty";
+                player2 ="Thirty";
             if (this.score ==3)
-                P2res="Forty";
+                player2 ="Forty";
             if (score1 ==1)
-                P1res="Fifteen";
+                player1 ="Fifteen";
             if (score1 ==2)
-                P1res="Thirty";
-            score = P1res + "-" + P2res;
+                player1 ="Thirty";
+            score = player1 + "-" + player2;
         }
 
         if (score1 > this.score && this.score >= 3)
