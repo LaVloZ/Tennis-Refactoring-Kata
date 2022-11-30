@@ -42,7 +42,7 @@ public class TennisGame2 implements TennisGame {
             player1 = "Love";
         }
 
-        if (score2 > score1 && score2 < 4 || score1 > score2 && score1 < 4) {
+        if (score2 < 4 && score1 < 4) {
             if (score1 == 1)
                 player1 = "Fifteen";
             if (score1 == 2)
