@@ -35,13 +35,9 @@ public class TennisGame1 implements TennisGame {
             else score = "Win for player2";
         } else {
             if (m_score1 == 0) {
-                String score1 = "Love";
-                score = score1;
+                score = "Love";
             } else if (m_score1 == 1) {
                 score = "Fifteen";
-                String score1 = "Fifteen";
-                score = score1;
-
             } else if (m_score1 == 2) {
                 score = "Thirty";
             } else if (m_score1 == 3) {
