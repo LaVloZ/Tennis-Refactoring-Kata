@@ -55,7 +55,7 @@ public class TennisGame2 implements TennisGame {
                 player2 = "Fifteen";
             if (this.score == 2)
                 player2 = "Thirty";
-            score = player1 + "-" + player2;
+            return player1 + "-" + player2;
         }
         if (this.score > score1 && this.score < 4) {
             if (this.score == 2)
