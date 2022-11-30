@@ -27,27 +27,7 @@ public class TennisGame1 implements TennisGame {
         if (score1 - score2 == 1) return "Advantage " + "player1";
         if (score2 - score1 == 1) return "Advantage " + "player2";
         if (score1 - score2 >= 2) return "Win for " + "player1";
-        return winFor("player2");
-    }
-
-    private boolean isPlayer1Won() {
-        return score1 - score2 >= 2;
-    }
-
-    private boolean isAdvantageForPlayer2() {
-        return score2 - score1 == 1;
-    }
-
-    private boolean isAdvantageForPlayer1() {
-        return score1 - score2 == 1;
-    }
-
-    private static String winFor(String player1) {
-        return "Win for " + player1;
-    }
-
-    private static String advantageFor(String player1) {
-        return "Advantage " + player1;
+        return "Win for " + "player2";
     }
 
     private String getScore(int score) {
