@@ -24,8 +24,6 @@ public class TennisGame1 implements TennisGame {
                 score = "Fifteen" + all;
             } else if (m_score1 == 2) {
                 score = "Thirty" + all;
-            } else {
-                score = "Deuce";
             }
             if (m_score1 > 2) {
                 score = "Deuce";
