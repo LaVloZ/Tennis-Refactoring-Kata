@@ -36,11 +36,14 @@ public class TennisGame1 implements TennisGame {
     private String getScore(int score) {
         if (score == 0) {
             return "Love";
-        } else if (score == 1) {
+        }
+        if (score == 1) {
             return "Fifteen";
-        } else if (score == 2) {
+        }
+        if (score == 2) {
             return "Thirty";
-        } else if (score == 3) {
+        }
+        if (score == 3) {
             return "Forty";
         }
         return "";
