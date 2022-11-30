@@ -43,10 +43,10 @@ public class TennisGame1 implements TennisGame {
                         tempScore = m_score2;
                     }
                     switch (tempScore) {
-                        case 0 -> score += "Love";
-                        case 1 -> score += "Fifteen";
-                        case 2 -> score += "Thirty";
-                        case 3 -> score += "Forty";
+                        case 0 -> score = score + "Love";
+                        case 1 -> score = score + "Fifteen";
+                        case 2 -> score = score + "Thirty";
+                        case 3 -> score = score + "Forty";
                     }
                 }
             }
