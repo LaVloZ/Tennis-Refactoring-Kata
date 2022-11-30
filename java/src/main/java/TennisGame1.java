@@ -34,9 +34,7 @@ public class TennisGame1 implements TennisGame {
             else if (minusResult >= 2) score = "Win for player1";
             else score = "Win for player2";
         } else {
-            score = getScore(m_score1);
-            score += "-";
-            score += getScore(m_score2);
+            score = (getScore(m_score1) + "-") + getScore(m_score2);
         }
         return score;
     }
