@@ -25,7 +25,7 @@ public class TennisGame1 implements TennisGame {
             return getScore(score1) + "-" + getScore(score2);
         }
         if (score1 - score2 == 1) return "Advantage " + "player1";
-        if (score1 - score2 == -1) return "Advantage " + "player2";
+        if (score2 - score1 == 1) return "Advantage " + "player2";
         if (score1 - score2 >= 2) return "Win for " + "player1";
         return "Win for " + "player2";
     }
