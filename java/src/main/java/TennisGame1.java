@@ -21,7 +21,6 @@ public class TennisGame1 implements TennisGame {
             if (m_score1 > 2) {
                 score = "Deuce";
             }
-
         } else if (m_score1 >= 4 || m_score2 >= 4) {
             int minusResult = m_score1 - m_score2;
             if (minusResult == 1) score = "Advantage player1";
