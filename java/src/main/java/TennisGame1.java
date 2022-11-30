@@ -34,15 +34,13 @@ public class TennisGame1 implements TennisGame {
             else if (minusResult >= 2) score = "Win for player1";
             else score = "Win for player2";
         } else {
-            if (m_score1 == 0) {
-                score = "Love";
-            } else if (m_score1 == 1) {
-                score = "Fifteen";
-            } else if (m_score1 == 2) {
-                score = "Thirty";
-            } else if (m_score1 == 3) {
-                score = "Forty";
-            }
+            score = switch (m_score1) {
+                case 0 -> "Love";
+                case 1 -> "Fifteen";
+                case 2 -> "Thirty";
+                case 3 -> "Forty";
+                default -> score;
+            };
             score += "-";
             if (m_score2 == 0) {
                 score = score + "Love";
