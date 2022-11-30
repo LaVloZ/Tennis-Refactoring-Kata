@@ -21,7 +21,7 @@ public class TennisGame2 implements TennisGame {
             score += "-All";
         }
         if (score1 == this.score && score1 >= 3)
-            score = "Deuce";
+            return "Deuce";
 
         if (score1 > 0 && this.score == 0) {
             if (score1 == 1)
