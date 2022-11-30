@@ -35,7 +35,6 @@ public class TennisGame1 implements TennisGame {
         if (score == 0) return "Love";
         if (score == 1) return "Fifteen";
         if (score == 2) return "Thirty";
-        if (score == 3) return "Forty";
-        return "";
+        return "Forty";
     }
 }
