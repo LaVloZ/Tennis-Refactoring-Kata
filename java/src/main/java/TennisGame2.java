@@ -66,7 +66,7 @@ public class TennisGame2 implements TennisGame {
                 player1 = "Fifteen";
             if (score1 == 2)
                 player1 = "Thirty";
-            score = player1 + "-" + player2;
+            return player1 + "-" + player2;
         }
 
         if (score1 > this.score && this.score >= 3) {
