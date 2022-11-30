@@ -64,7 +64,7 @@ public class TennisGame2 implements TennisGame {
             if (score2 == 3)
                 player2 = "Forty";
             if (score1 == 1)
-                player1 = "Fifteen";
+                return "Fifteen" + "-" + player2;
             if (score1 == 2)
                 return "Thirty" + "-" + player2;
             return player1 + "-" + player2;
