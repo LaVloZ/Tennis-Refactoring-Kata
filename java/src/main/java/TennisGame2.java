@@ -7,9 +7,9 @@ public class TennisGame2 implements TennisGame {
     }
 
     public String getScore() {
-        if (score1 == score2 && score1 >= 3)
-            return "Deuce";
         if (score1 == score2) {
+            if (score1 == score2 && score1 >= 3)
+                return "Deuce";
             return score(score1) + "-All";
         }
 
