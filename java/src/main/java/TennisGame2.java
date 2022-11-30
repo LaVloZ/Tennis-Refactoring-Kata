@@ -27,8 +27,7 @@ public class TennisGame2 implements TennisGame {
         if (score1 == 0) return "Love";
         if (score1 == 1) return "Fifteen";
         if (score1 == 2) return "Thirty";
-        if (score1 == 3) return "Forty";
-        return "Deuce";
+        return "Forty";
     }
 
     public void wonPointForPlayer1() {
