@@ -41,14 +41,14 @@ public class TennisGame1 implements TennisGame {
         return score;
     }
 
-    private String getScore(int m_score11) {
-        if (m_score11 == 0) {
+    private String getScore(int score) {
+        if (score == 0) {
             return "Love";
-        } else if (m_score11 == 1) {
+        } else if (score == 1) {
             return "Fifteen";
-        } else if (m_score11 == 2) {
+        } else if (score == 2) {
             return "Thirty";
-        } else if (m_score11 == 3) {
+        } else if (score == 3) {
             return "Forty";
         }
         return "";
