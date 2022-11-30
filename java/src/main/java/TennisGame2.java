@@ -72,6 +72,9 @@ public class TennisGame2 implements TennisGame {
         if (score1 - score2 >= 2) {
             return "Win for player1";
         }
+        if (score2 - score1 >= 2) {
+            return "Win for player2";
+        }
 
         if (score1 > score2) {
             score = "Advantage player1";
@@ -81,9 +84,6 @@ public class TennisGame2 implements TennisGame {
             score = "Advantage player2";
         }
 
-        if (score2 - score1 >= 2) {
-            return "Win for player2";
-        }
         return score;
     }
 
