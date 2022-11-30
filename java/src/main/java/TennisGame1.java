@@ -43,13 +43,15 @@ public class TennisGame1 implements TennisGame {
                 score = "Forty";
             }
             score += "-";
-            score = switch (m_score2) {
-                case 0 -> score + "Love";
-                case 1 -> score + "Fifteen";
-                case 2 -> score + "Thirty";
-                case 3 -> score + "Forty";
-                default -> score;
-            };
+            if (m_score2 == 0) {
+                score = score + "Love";
+            } else if (m_score2 == 1) {
+                score = score + "Fifteen";
+            } else if (m_score2 == 2) {
+                score = score + "Thirty";
+            } else if (m_score2 == 3) {
+                score = score + "Forty";
+            }
         }
         return score;
     }
