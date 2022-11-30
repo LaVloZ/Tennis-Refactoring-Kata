@@ -24,12 +24,10 @@ public class TennisGame1 implements TennisGame {
                 String all = "-All";
                 if (m_score1 == 1) {
                     score = "Fifteen" + all;
+                } else if (m_score1 == 2) {
+                    score = "Thirty" + all;
                 } else {
-                    if (m_score1 == 2) {
-                        score = "Thirty" + all;
-                    } else {
-                        score = "Deuce";
-                    }
+                    score = "Deuce";
                 }
             }
         } else if (m_score1 >= 4 || m_score2 >= 4) {
