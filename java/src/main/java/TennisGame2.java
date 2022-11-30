@@ -54,7 +54,6 @@ public class TennisGame2 implements TennisGame {
             return player1 + "-" + player2;
         }
 
-
         if (score2 > score1 && score2 < 4) {
             if (score2 == 2)
                 player2 = "Thirty";
