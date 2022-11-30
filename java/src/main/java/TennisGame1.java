@@ -41,11 +41,11 @@ public class TennisGame1 implements TennisGame {
             if (m_score1 == 0) {
                 score = "Love";
             } else if (m_score1 == 1) {
-                score = score + "Fifteen";
+                score = "Fifteen";
             } else if (m_score1 == 2) {
-                score = score + "Thirty";
+                score = "Thirty";
             } else if (m_score1 == 3) {
-                score = score + "Forty";
+                score = "Forty";
             }
             score += "-";
             if (m_score2 == 0) {
