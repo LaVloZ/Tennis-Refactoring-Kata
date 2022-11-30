@@ -3,9 +3,6 @@ public class TennisGame2 implements TennisGame {
     public int score1 = 0;
     public int score2 = 0;
 
-    public String player1 = "";
-    public String player2 = "";
-
     public TennisGame2() {
     }
 
