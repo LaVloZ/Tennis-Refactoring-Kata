@@ -31,8 +31,8 @@ public class TennisGame2 implements TennisGame {
                 player1 = "Forty";
 
             player2 = "Love";
-            score = "Love" + "-" + player2;
         }
+            score = "Love" + "-" + player2;
         if (score2 > 0 && score1 == 0) {
             if (score2 == 1)
                 player2 = "Fifteen";
