@@ -24,9 +24,9 @@ public class TennisGame1 implements TennisGame {
         if (score1 < 4 && score2 < 4) {
             return getScore(score1) + "-" + getScore(score2);
         }
-        if (isAdvantageForPlayer1()) return advantageFor("player1");
-        if (isAdvantageForPlayer2()) return advantageFor("player2");
-        if (isPlayer1Won()) return winFor("player1");
+        if (score1 - score2 == 1) return "Advantage " + "player1";
+        if (score2 - score1 == 1) return "Advantage " + "player2";
+        if (score1 - score2 >= 2) return "Win for " + "player1";
         return winFor("player2");
     }
 
