@@ -66,7 +66,7 @@ public class TennisGame2 implements TennisGame {
 
     private String extracted(int score1) {
         if (score1 == 1)
-            player1 = "Fifteen";
+            return "Fifteen";
         if (score1 == 2)
             player1 = "Thirty";
         if (score1 == 3)
