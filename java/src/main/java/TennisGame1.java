@@ -34,20 +34,20 @@ public class TennisGame1 implements TennisGame {
             else if (minusResult >= 2) score = "Win for player1";
             else score = "Win for player2";
         } else {
-            score = getScore("", m_score1);
+            score = getScore(m_score1);
             score += "-";
-            score += getScore("", m_score2);
+            score += getScore(m_score2);
         }
         return score;
     }
 
-    private String getScore(String score, int m_score11) {
+    private String getScore(int m_score11) {
         return switch (m_score11) {
             case 0 -> "Love";
             case 1 -> "Fifteen";
             case 2 -> "Thirty";
             case 3 -> "Forty";
-            default -> score;
+            default -> "";
         };
     }
 }
