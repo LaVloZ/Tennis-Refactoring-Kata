@@ -26,11 +26,10 @@ public class TennisGame1 implements TennisGame {
             if (minusResult == 1) return "Advantage player1";
             else if (minusResult == -1) return "Advantage player2";
             else if (minusResult >= 2) return "Win for player1";
-            else score = "Win for player2";
+            return  "Win for player2";
         } else {
             return getScore(m_score1) + "-" + getScore(m_score2);
         }
-        return score;
     }
 
     private String getScore(int score) {
