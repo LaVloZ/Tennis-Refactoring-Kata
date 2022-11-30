@@ -36,7 +36,7 @@ public class TennisGame1 implements TennisGame {
         } else {
             score = getScore("", m_score1);
             score += "-";
-            score += getScore(score, m_score2);
+            score += getScore("", m_score2);
         }
         return score;
     }
