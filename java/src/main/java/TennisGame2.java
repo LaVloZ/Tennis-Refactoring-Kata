@@ -43,13 +43,7 @@ public class TennisGame2 implements TennisGame {
         }
 
         if (score2 < 4 && score1 < 4) {
-            if (score2 == 1)
-                player2 = "Fifteen";
-            if (score2 == 2)
-                player2 = "Thirty";
-            if (score2 == 3)
-                player2 = "Forty";
-            return extracted(score1) + "-" + player2;
+            return extracted(score1) + "-" + extracted(score2);
         }
         if (score1 - score2 >= 2) {
             return "Win for player1";
@@ -71,7 +65,7 @@ public class TennisGame2 implements TennisGame {
             return "Fifteen";
         if (score1 == 2)
             return "Thirty";
-            return "Forty";
+        return "Forty";
     }
 
     public void P1Score() {
