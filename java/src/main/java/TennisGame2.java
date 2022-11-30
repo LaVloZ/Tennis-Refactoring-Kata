@@ -20,18 +20,7 @@ public class TennisGame2 implements TennisGame {
         }
         if (score1 == score2 && score1 >= 3)
             return "Deuce";
-
-        if (score2 > 0 && score1 == 0) {
-            if (score2 == 1)
-                player2 = "Fifteen";
-            if (score2 == 2)
-                player2 = "Thirty";
-            if (score2 == 3)
-                player2 = "Forty";
-
-            player1 = "Love";
-        }
-
+        
         if (score2 < 4 && score1 < 4) {
             return extracted(score1) + "-" + extracted(score2);
         }
