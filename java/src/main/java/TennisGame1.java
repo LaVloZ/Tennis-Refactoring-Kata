@@ -9,9 +9,9 @@ public class TennisGame1 implements TennisGame {
 
     public void wonPoint(String playerName) {
         if ("player1".equals(playerName))
-            score1 += 1;
+            score1++;
         else
-            score2 += 1;
+            score2++;
     }
 
     public String getScore() {
