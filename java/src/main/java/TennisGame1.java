@@ -18,14 +18,7 @@ public class TennisGame1 implements TennisGame {
         String score = "";
         if (m_score1 == m_score2) {
             String all = "-All";
-            String score1 = "";
-            if (m_score1 == 0) {
-                score1 = "Love";
-            } else if (m_score1 == 1) {
-                score1 = "Fifteen";
-            } else if (m_score1 == 2) {
-                score1 = "Thirty";
-            }
+            String score1 = getScore(m_score1);
             score = score1 + all;
             if (m_score1 > 2) {
                 score = "Deuce";
