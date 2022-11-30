@@ -22,21 +22,8 @@ public class TennisGame2 implements TennisGame {
             return "Deuce";
 
         if (score1 > 0 && score2 == 0) {
-            if (score1 == 1) {
-            }
-            if (score1 == 2) {
-            }
-            if (score1 == 3) {
-            }
 
             player2 = "Love";
-
-            if (score2 == 1)
-                player2 = "Fifteen";
-            if (score2 == 2)
-                player2 = "Thirty";
-            if (score2 == 3)
-                player2 = "Forty";
 
             player1 = "Love";
 
