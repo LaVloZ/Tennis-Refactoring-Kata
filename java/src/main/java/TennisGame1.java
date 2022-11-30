@@ -48,7 +48,6 @@ public class TennisGame1 implements TennisGame {
                     case 1 -> score += "Fifteen";
                     case 2 -> score += "Thirty";
                     case 3 -> score += "Forty";
-                    default -> throw new IllegalStateException("Unexpected value: " + tempScore);
                 }
             }
         }
