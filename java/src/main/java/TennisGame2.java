@@ -11,7 +11,7 @@ public class TennisGame2 implements TennisGame {
 
     public String getScore() {
         String score = "";
-        if (score1 == this.score2 && score1 < 4) {
+        if (score1 == score2 && score1 < 4) {
             if (score1 == 0)
                 return "Love" + "-All";
             if (score1 == 1)
@@ -20,10 +20,10 @@ public class TennisGame2 implements TennisGame {
                 score = "Thirty";
             score += "-All";
         }
-        if (score1 == this.score2 && score1 >= 3)
+        if (score1 == score2 && score1 >= 3)
             return "Deuce";
 
-        if (score1 > 0 && this.score2 == 0) {
+        if (score1 > 0 && score2 == 0) {
             if (score1 == 1)
                 player1 = "Fifteen";
             if (score1 == 2)
@@ -34,34 +34,34 @@ public class TennisGame2 implements TennisGame {
             player2 = "Love";
             score = player1 + "-" + player2;
         }
-        if (this.score2 > 0 && score1 == 0) {
-            if (this.score2 == 1)
+        if (score2 > 0 && score1 == 0) {
+            if (score2 == 1)
                 player2 = "Fifteen";
-            if (this.score2 == 2)
+            if (score2 == 2)
                 player2 = "Thirty";
-            if (this.score2 == 3)
+            if (score2 == 3)
                 player2 = "Forty";
 
             player1 = "Love";
             score = "Love" + "-" + player2;
         }
 
-        if (score1 > this.score2 && score1 < 4) {
+        if (score1 > score2 && score1 < 4) {
             if (score1 == 2)
                 player1 = "Thirty";
             if (score1 == 3)
                 player1 = "Forty";
-            if (this.score2 == 1)
+            if (score2 == 1)
                 player2 = "Fifteen";
-            if (this.score2 == 2)
+            if (score2 == 2)
                 player2 = "Thirty";
             return player1 + "-" + player2;
         }
 
-        if (this.score2 > score1 && this.score2 < 4) {
-            if (this.score2 == 2)
+        if (score2 > score1 && score2 < 4) {
+            if (score2 == 2)
                 player2 = "Thirty";
-            if (this.score2 == 3)
+            if (score2 == 3)
                 player2 = "Forty";
             if (score1 == 1)
                 player1 = "Fifteen";
@@ -70,18 +70,18 @@ public class TennisGame2 implements TennisGame {
             return player1 + "-" + player2;
         }
 
-        if (score1 > this.score2 && this.score2 >= 3) {
+        if (score1 > score2 && score2 >= 3) {
             score = "Advantage player1";
         }
 
-        if (this.score2 > score1 && score1 >= 3) {
+        if (score2 > score1 && score1 >= 3) {
             score = "Advantage player2";
         }
 
-        if (score1 >= 4 && this.score2 >= 0 && (score1 - this.score2) >= 2) {
+        if (score1 >= 4 && score2 >= 0 && (score1 - score2) >= 2) {
             return "Win for player1";
         }
-        if (this.score2 >= 4 && score1 >= 0 && (this.score2 - score1) >= 2) {
+        if (score2 >= 4 && score1 >= 0 && (score2 - score1) >= 2) {
             return "Win for player2";
         }
         return score;
