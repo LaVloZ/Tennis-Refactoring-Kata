@@ -19,7 +19,7 @@ public class TennisGame2 implements TennisGame {
         }
 
         if (score2 < 4 && score1 < 4) {
-            return extracted(score1) + "-" + extracted(score2);
+            return score(score1) + "-" + score(score2);
         }
         if (score1 - score2 >= 2) {
             return "Win for player1";
@@ -34,7 +34,7 @@ public class TennisGame2 implements TennisGame {
 
     }
 
-    private String extracted(int score1) {
+    private String score(int score1) {
         if (score1 == 0)
             return "Love";
         if (score1 == 1)
