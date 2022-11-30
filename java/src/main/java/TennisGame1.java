@@ -4,7 +4,7 @@ public class TennisGame1 implements TennisGame {
     private int m_score1 = 0;
     private int m_score2 = 0;
 
-    public TennisGame1(String player1Name, String player2Name) {
+    public TennisGame1() {
     }
 
     public void wonPoint(String playerName) {
