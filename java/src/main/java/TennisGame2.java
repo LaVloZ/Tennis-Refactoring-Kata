@@ -23,7 +23,6 @@ public class TennisGame2 implements TennisGame {
 
         if (score1 > 0 && score2 == 0) {
 
-            player2 = "Love";
 
             player1 = "Love";
 
