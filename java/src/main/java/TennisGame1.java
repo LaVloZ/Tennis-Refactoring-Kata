@@ -34,22 +34,15 @@ public class TennisGame1 implements TennisGame {
             }
         } else {
             if (m_score1 < 4 && m_score2 < 4) {
-                if (1 == 1) tempScore = m_score1;
-                else {
-                    score += "-";
-                    tempScore = m_score2;
-                }
+                tempScore = m_score1;
                 switch (tempScore) {
                     case 0 -> score = score + "Love";
                     case 1 -> score = score + "Fifteen";
                     case 2 -> score = score + "Thirty";
                     case 3 -> score = score + "Forty";
                 }
-                if (2 == 1) tempScore = m_score1;
-                else {
-                    score += "-";
-                    tempScore = m_score2;
-                }
+                score += "-";
+                tempScore = m_score2;
                 switch (tempScore) {
                     case 0 -> score = score + "Love";
                     case 1 -> score = score + "Fifteen";
