@@ -71,9 +71,7 @@ public class TennisGame2 implements TennisGame {
             return "Fifteen";
         if (score1 == 2)
             return "Thirty";
-        if (score1 == 3)
             return "Forty";
-        return player1;
     }
 
     public void P1Score() {
