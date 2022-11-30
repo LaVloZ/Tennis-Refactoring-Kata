@@ -21,16 +21,16 @@ public class TennisGame1 implements TennisGame {
                 String all = "-All";
                 score = "Love" + all;
             } else {
-                if (m_score1 != 1) {
+                if (m_score1 == 1) {
+                    String all = "-All";
+                    score = "Fifteen" + all;
+                } else {
                     if (m_score1 == 2) {
                         String all = "-All";
                         score = "Thirty" + all;
                     } else {
                         score = "Deuce";
                     }
-                } else {
-                    String all = "-All";
-                    score = "Fifteen" + all;
                 }
             }
         } else if (m_score1 >= 4 || m_score2 >= 4) {
