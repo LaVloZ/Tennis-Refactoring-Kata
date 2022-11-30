@@ -20,13 +20,13 @@ public class TennisGame1 implements TennisGame {
             String all = "-All";
             String score1 = "";
             if (m_score1 == 0) {
-                score1 = "Love" + all;
+                score1 = "Love";
             } else if (m_score1 == 1) {
-                score1 = "Fifteen" + all;
+                score1 = "Fifteen";
             } else if (m_score1 == 2) {
-                score1 = "Thirty" + all;
+                score1 = "Thirty";
             }
-            score = score1;
+            score = score1 + all;
             if (m_score1 > 2) {
                 score = "Deuce";
             }
