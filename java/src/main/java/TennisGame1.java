@@ -17,19 +17,14 @@ public class TennisGame1 implements TennisGame {
     public String getScore() {
         String score = "";
         if (m_score1 == m_score2) {
-            switch (m_score1) {
-                case 0:
-                    score = "Love" + "-All";
-                    break;
-                case 1:
-                    score = "Fifteen" + "-All";
-                    break;
-                case 2:
-                    score = "Thirty" + "-All";
-                    break;
-                default:
-                    score = "Deuce";
-                    break;
+            if (m_score1 == 0) {
+                score = "Love" + "-All";
+            } else if (m_score1 == 1) {
+                score = "Fifteen" + "-All";
+            } else if (m_score1 == 2) {
+                score = "Thirty" + "-All";
+            } else {
+                score = "Deuce";
             }
         } else if (m_score1 >= 4 || m_score2 >= 4) {
             int minusResult = m_score1 - m_score2;
