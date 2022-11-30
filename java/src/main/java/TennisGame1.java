@@ -24,10 +24,18 @@ public class TennisGame1 implements TennisGame {
         if (score1 < 4 && score2 < 4) {
             return getScore(score1) + "-" + getScore(score2);
         }
-        if (score1 - score2 == 1) return advantageFor("player1");
-        if (score2 - score1 == 1) return advantageFor("player2");
+        if (isAdvantageForPlayer1()) return advantageFor("player1");
+        if (isAdvantageForPlayer2()) return advantageFor("player2");
         if (score1 - score2 >= 2) return winFor("player1");
         return winFor("player2");
+    }
+
+    private boolean isAdvantageForPlayer2() {
+        return score2 - score1 == 1;
+    }
+
+    private boolean isAdvantageForPlayer1() {
+        return score1 - score2 == 1;
     }
 
     private static String winFor(String player1) {
