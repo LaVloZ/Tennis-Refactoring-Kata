@@ -19,13 +19,13 @@ public class TennisGame1 implements TennisGame {
         if (m_score1 == m_score2) {
             switch (m_score1) {
                 case 0:
-                    score = "Love-All";
+                    score = "Love" + "-All";
                     break;
                 case 1:
-                    score = "Fifteen-All";
+                    score = "Fifteen" + "-All";
                     break;
                 case 2:
-                    score = "Thirty-All";
+                    score = "Thirty" + "-All";
                     break;
                 default:
                     score = "Deuce";
