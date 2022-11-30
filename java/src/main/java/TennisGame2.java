@@ -68,7 +68,6 @@ public class TennisGame2 implements TennisGame {
                 return "Thirty" + "-" + player2;
             return player1 + "-" + player2;
         }
-        score = "Love" + "-" + player2;
         if (score1 - score2 >= 2) {
             return "Win for player1";
         }
@@ -82,7 +81,7 @@ public class TennisGame2 implements TennisGame {
             return "Advantage player2";
         }
 
-        return score;
+        return "Love" + "-" + player2;
     }
 
     public void P1Score() {
